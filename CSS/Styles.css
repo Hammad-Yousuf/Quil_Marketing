@@ -1,0 +1,32 @@
+.custom__nav{
+    background-color: #ca6800;
+}
+.navbar-brand .logo{
+    width: 10em;
+}
+/* stroke */
+a.nav-link{
+    color: #fff !important;
+    font-size: 1.2em;
+  position: relative;
+    margin-inline: .5em  ;
+}
+a.nav-link:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  height: 2px;
+  transition: all .5s;
+}
+a.nav-link:hover:after {
+  width: 100%;
+}
+.red{
+    background-color: red !important;
+}
