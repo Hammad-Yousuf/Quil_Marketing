@@ -1,3 +1,9 @@
+:root{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
 .custom__nav{
     background-color: red;
 }
@@ -74,7 +80,19 @@ a.nav-link:hover:after {
 }
 .item h3{
   font-size: 4em !important;
-  /* margin-bottom: 1em; */
+  margin-bottom: 1em;
+}
+.button {
+  border: 2px solid red;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  padding: .8em 2em;
+  font-size: 1.3em;
+  border-radius: 8px 2px 8px 2px;
+}
+.button:hover{
+  background: red;
+  border: 2px solid red;
 }
 
 /* Features Container */
@@ -85,6 +103,8 @@ a.nav-link:hover:after {
 .details__container{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 .feature{
   display: flex;
@@ -92,7 +112,7 @@ a.nav-link:hover:after {
   align-items: center;
 }
 .icon img{
-  width: 4em;
+  width: 3em;
 }
 .feature__text{
   font-size: 1.3em;
@@ -117,7 +137,56 @@ a.nav-link:hover:after {
   color: #444;
 }
 .about__text{
-  line-height: 1.8;
+  line-height: 2;
   color: #444;
 }
- 
+/* About link */
+
+.about__link__container{
+  background: rgb(70, 70, 70);
+  padding: 3em;
+}
+.about__link{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about_link > *{
+  width: fit-content;
+}
+.about__link__img{
+  width: 15em;
+}
+.about__link__text{
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.about__link__btn{
+  background: red;
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  padding: .8em 2em;
+  white-space: nowrap;
+  
+}
+
+/* Products Section */
+.product__head{
+  padding: 2em 0;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.products{
+  width: fit-content;
+  display: column;
+  columns: 3;
+  /* column-gap: 2em; */
+}
+.product__img{
+width: 20em;
+margin-bottom: 1em;
+}
+

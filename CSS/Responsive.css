@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+    .products{
+        columns: 2;
+    }
+}
+@media (max-width: 786px) {
+    .products{
+        columns: 1;
+    }
+    .about__container{
+        flex-direction: column;
+    }
+}
