@@ -2,12 +2,21 @@
     .products{
         columns: 2;
     }
+    .about__link{
+        grid-template-columns: repeat(2, auto);
+    }
 }
 @media (max-width: 786px) {
+    .banner__text{
+        font-size: 2.5em;
+    }
     .products{
         columns: 1;
     }
     .about__container{
         flex-direction: column;
+    }
+    .about__link{
+        grid-template-columns: 1fr;
     }
 }

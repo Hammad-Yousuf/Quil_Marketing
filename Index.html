@@ -47,22 +47,10 @@
   </div>
   <section class="banner__container">
     <!-- Slider -->
-    <div class="banner__slider owl-carousel owl-theme">
+    <div class="banner__slider">
       <div class="item container bg-warning">
-        <h3>Want to know<br> more about us?</h3>
-        <button class="btn btn-success button">Discover</button>
-      </div>
-      <div class="item container bg-danger">
-        <h3>Want to know<br> more about us?</h3>
-        <button class="btn btn-success button">Discover</button>
-      </div>
-      <div class="item container bg-success">
-        <h3>Want to know<br> more about us?</h3>
-        <button class="btn btn-success button">Discover</button>
-      </div>
-      <div class="item container bg-dark">
-        <h3>Want to know<br> more about us?</h3>
-        <button class="btn btn-success button">Discover</button>
+        <h3 class="banner__text">Want to know<br> more about us?</h3>
+        <button class="btn button text-white">Discover</button>
       </div>
     </div>
   </section>
@@ -115,27 +103,27 @@
     <div class="container products">
       <div class="product" data-aos="fade-up">
         <img class="product__img" src="./Images/Products/Depositphotos_2284538_l-2015(1).jpg" alt="">
-        <div class="hovel__layer"></div>
+        <!-- <div class="hovel__layer"></div> -->
       </div>
       <div class="product" data-aos="fade-up">
         <img class="product__img" src="./Images/Products/DSC00018.jpg" alt="">
-        <div class="hovel__layer"></div>
+        <!-- <div class="hovel__layer"></div> -->
       </div>
       <div class="product" data-aos="fade-up">
         <img class="product__img" src="./Images/Products/DSC00014.jpg" alt="">
-        <div class="hovel__layer"></div>
+        <!-- <div class="hovel__layer"></div> -->
       </div>
       <div class="product" data-aos="fade-up">
         <img class="product__img" src="./Images/Products/DSC00026.jpg" alt="">
-        <div class="hovel__layer"></div>
+        <!-- <div class="hovel__layer"></div> -->
       </div>
       <div class="product" data-aos="fade-up">
         <img class="product__img" src="./Images/Products/DSC00030.jpg" alt="">
-        <div class="hovel__layer"></div>
+        <!-- <div class="hovel__layer"></div> -->
       </div>
       <div class="product" data-aos="fade-up">
         <img class="product__img" src="./Images/Products/DSC00034.jpg" alt="">
-        <div class="hovel__layer"></div>
+        <!-- <div class="hovel__layer"></div> -->
       </div>
       <div class="product" data-aos="fade-up">
         <img src="./Images/Products/DSC00039.jpg" alt="" class="product__img">
@@ -220,11 +208,15 @@
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         items: 1,
+        // center: true,
         responsiveClass: true,
         URLhashListener: true,
         startPosition: 'URLHash',
         responsive: {
           0: {
+            items: 1,
+          },
+          786:{
             items: 1,
           },
           1280: {
