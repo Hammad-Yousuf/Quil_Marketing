@@ -1,5 +1,5 @@
 .custom__nav{
-    background-color: #ca6800;
+    background-color: red;
 }
 .navbar-brand .logo{
     width: 10em;
@@ -8,6 +8,7 @@
 a.nav-link{
     color: #fff !important;
     font-size: 1.2em;
+    font-weight: 300;
   position: relative;
     margin-inline: .5em  ;
 }
@@ -27,6 +28,96 @@ a.nav-link:after{
 a.nav-link:hover:after {
   width: 100%;
 }
-.red{
-    background-color: red !important;
+
+/* Banner */
+
+.banner__container{
+    padding-top: 15em;
+    width: 100%;
+    padding-inline: 3em;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/Banner\ Background.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+.banner__background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9999;
 }
+.banner__content{
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* background-color: aqua; */
+    backdrop-filter: blur(10px);
+}
+/* Slider */
+.banner__slide {
+  width: fit-content !important;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  z-index: 9;
+}
+.item{
+  background: transparent !important;
+  width: fit-content;
+  color: #fff;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.item h3{
+  font-size: 4em !important;
+  /* margin-bottom: 1em; */
+}
+
+/* Features Container */
+.features__container{
+  padding: 1em 2em;
+  background: rgb(255, 235, 235);
+}
+.details__container{
+  display: flex;
+  justify-content: space-around;
+}
+.feature{
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.icon img{
+  width: 4em;
+}
+.feature__text{
+  font-size: 1.3em;
+  color: #444;
+  text-transform: capitalize;
+}
+
+/* About Section*/
+
+.about{
+  padding: 2em;
+}
+.about__container{
+  display: flex;
+}
+.about__container div{
+  width: 100%;
+}
+.about__head{
+  font-size: 3em;
+  line-height: 1.5;
+  color: #444;
+}
+.about__text{
+  line-height: 1.8;
+  color: #444;
+}
+ 
