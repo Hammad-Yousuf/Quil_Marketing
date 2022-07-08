@@ -1,9 +1,9 @@
 :root{
-    --green : #013030;
-    --light-green: #085050;
-    --gold : #c1986c;
-    --golden: #c2823d;
-    --gray: #ebeaea;
+    --green : rgb(125, 125, 125)   ;
+    --light-green: rgb(77, 77, 77);
+    --gold : #ff2f2f;
+    --golden: red;
+    --gray: rgb(127, 127, 127) ;
     --font : 'Alegreya Sans SC', sans-serif;
     --text: 'Zen Kurenaido', sans-serif;
     --white: #fff;
@@ -121,8 +121,8 @@ textarea:focus{
     /* background: #ccc; */
 }
 .form-button{
-    background: var(--green);
-    color: var(--golden);
+    background: var(--gold);
+    color: var(--white);
     border: none;
     padding: 0.7rem 1rem;
     border-radius: 3px;

@@ -19,4 +19,11 @@
     .about__link{
         grid-template-columns: 1fr;
     }
+    .footer__nav__container{
+        justify-content: center;
+        gap: 2em;
+    }
+    .footer__links__container{
+        gap: 2em;
+    }
 }

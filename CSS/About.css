@@ -1,4 +1,13 @@
-
+:root{
+    --green : rgb(125, 125, 125)   ;
+    --light-green: rgb(77, 77, 77);
+    --gold : #ff2f2f;
+    --golden: red;
+    --gray: rgb(127, 127, 127) ;
+    --font : 'Alegreya Sans SC', sans-serif;
+    --text: 'Zen Kurenaido', sans-serif;
+    --white: #fff;
+}
 
 /* About Main Container */
 
@@ -51,14 +60,15 @@
     z-index: 99;
 }
 .about_sub_head{
-    color: var(--golden);
+    color: #444;
     font-size: 3em;
     font-weight: bold;
 }
 .about_text{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    line-height: 2;
     height: max-content;
-    color: var(--golden);
+    color: #555;
     font-family: var(--text);
     /* text-align: justify; */
     position: relative;
@@ -82,10 +92,7 @@
     bottom: -.8em;
     right: 0;
 }
-.about_row:nth-child(1){
-    border-top: 1em solid var(--gray);
-    border-left: 1em solid var(--gray);
-}
+
 .about_row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
