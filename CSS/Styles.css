@@ -9,6 +9,7 @@ body{
 }
 .navbar-brand .logo{
     width: 10em;
+    transition: width 250ms ease-in-out
 }
 /* stroke */
 a.nav-link{
@@ -79,14 +80,14 @@ a.nav-link:hover:after {
   place-items: center;
 }
 .banner__text{
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 1em;
 }
 .button {
   border: 2px solid red;
   background: transparent;
   backdrop-filter: blur(4px);
-  padding: .8em 2em;
+  padding: .5em 2em;
   font-size: 1.3em;
   border-radius: 8px 2px 8px 2px;
 }
@@ -112,11 +113,11 @@ a.nav-link:hover:after {
   align-items: center;
 }
 .icon img{
-  width: 3em;
+  width: 2em;
 }
 .feature__text{
-  font-size: 1.3em;
-  color: #444;
+  font-size: 1.2em;
+  color: #555;
   text-transform: capitalize;
 }
 
@@ -124,15 +125,17 @@ a.nav-link:hover:after {
 
 .about{
   padding: 2em;
+  overflow: hidden;
 }
 .about__container{
   display: flex;
+  overflow: hidden;
 }
 .about__container div{
   width: 100%;
 }
 .about__head{
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5;
   color: #444;
 }
@@ -142,14 +145,19 @@ a.nav-link:hover:after {
 }
 /* About link */
 
+.about__container{
+  overflow-X: hidden;
+}
+
 .about__link__container{
   background: rgb(70, 70, 70);
-  padding: 3em;
+  padding-block: 1em;
 }
 .about__link{
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
+  justify-content: center;
   gap: 2em  ;
 }
 .about_link > *{
@@ -161,7 +169,7 @@ a.nav-link:hover:after {
 .about__link__text{
   color: #fff;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .about__link__btn{
   background: red;
@@ -190,3 +198,142 @@ width: 20em;
 margin-bottom: 1em;
 }
 
+/* Socail Icons */
+
+.social__container{
+  background: #444;
+  padding-block: 1.5em;
+}
+
+.social__head{
+  font-size: 2.3em;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.social__icon {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  font-size: 39px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+      outline-offset, outline-color,
+      background-color;
+  transition-duration: .25s;
+}
+
+.social__icon:hover {
+  outline-offset: 4px;
+}
+
+.social__icon:hover i {
+  animation: shake .25s;
+  color: #fff;
+  text-decoration: none;
+}
+.icon--facebook:hover{
+  background-image: radial-gradient(circle at 30% 107%,
+  #18acfd,
+  #0166e1);
+  outline-color: #0166e1;
+}
+
+/* Footer Nav */
+.footer__nav__container{
+  display: flex;  
+  justify-content: space-between;
+}
+.contact__details{
+  /* background-color: #0166e1; */
+  width: 15em;
+  word-wrap: break-all;
+  color: #555;
+}
+p{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.footer__logo{
+  width: 12em;
+  margin-bottom: 2em;
+}
+.detail{
+  display: flex;
+  gap: 2em;
+}
+.detail__label{
+  font-weight: 500;
+}
+.footer__links__container{
+  display: flex;
+  gap: 8em;
+}
+.footer__link{
+  text-decoration: none;
+  color: #555;
+}
+.footer__item{
+  list-style-type: none;
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+.footer__link:hover{
+  color: #444;
+}
+.contact__btn_container{
+  display: grid;
+  place-items: center;
+  height: auto;
+}
+.contact__btn{
+  padding: 0.5em 2em;
+  border-radius: 40px;  
+  transition: all 250ms ease-in-out;
+}
+.contact__btn:hover{
+  background: #555;
+  color: #fff;
+}
+
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #eee;
+  padding-block: .2em;
+}
+
+.footer__social__icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  font-size: 1.5em;
+  color: #555;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+      outline-offset, outline-color,
+      background-color;
+  transition-duration: .25s;
+}
+
+.footer__social__icon:hover {
+  outline-offset: 4px;
+}
+
+.footer__social__icon:hover i {
+  animation: shake .25s;
+  color: #fff;
+  text-decoration: none;
+}
